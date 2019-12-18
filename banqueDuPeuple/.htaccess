@@ -1,0 +1,21 @@
+RewriteEngine on
+
+RewriteRule  ^accueil$ accueil.php
+RewriteRule ^img1$ asset/css/img/welcome.jpeg
+RewriteRule ^img2$ banqueDuPeuple/asset/css/img/fc.jpg
+
+RewriteRule ^connexion$ controller/userControlleur.php
+RewriteRule ^deconnexion$ controller/userControlleur.php?deconnexion
+RewriteRule ^errorConnexions$ index.php?connexion=0
+
+RewriteRule ^gestComptes$ view/comptes/listeCompte.php
+RewriteRule ^gestClients$ view/clients/listeClient.php
+
+RewriteRule ^indexB$ view/indexBanque.php
+RewriteRule ^redirige$ index.php
+RewriteRule ^ajoutCompte$ controller/compteControlleur.php?compteNew=1
+RewriteRule ^AjoutCompte$ view/indexBanque/view=AjoutCompte
+RewriteRule ^jquery$  asset/css/js/jquery.js
+RewriteRule ^script$   js/script.js
+RewriteRule ^ajax$ ajax/supprimerCompte.php
+RewriteRule ^boot$  asset/css/css/bootstrap.css
